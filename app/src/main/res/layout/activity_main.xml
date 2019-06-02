@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:background="@android:color/holo_orange_light">
+
+    <Button
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Exit"
+        android:onClick="exit"
+        android:layout_below="@+id/About"
+        android:layout_alignStart="@+id/NewGame"
+        android:layout_alignEnd="@+id/NewGame" />
+
+    <Button
+        android:text="About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/About"
+        android:layout_below="@+id/NewGame"
+        android:layout_alignParentStart="true"
+        android:onClick="about" />
+
+    <TextView
+        android:text="Brain Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/braingame"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Continue"
+        android:onClick="change"
+        android:layout_below="@+id/braingame"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:text="New Game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NewGame"
+        android:layout_below="@+id/Continue"
+        android:layout_alignParentStart="true"
+        android:onClick="newgame" />
+</RelativeLayout>
